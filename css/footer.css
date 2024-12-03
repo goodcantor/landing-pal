@@ -1,0 +1,123 @@
+.footer {
+  padding-top: 78px;
+  background: url("../imgs/footer.png") center/cover no-repeat;
+}
+
+.footer__inner {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 32px;
+}
+.footer__row {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  margin-bottom: 18px;
+}
+.footer__row-text {
+  white-space: nowrap;
+  color: #d4d4d4;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+.footer__row-line {
+  height: 1px;
+  background: #ffffff;
+  width: 100%;
+}
+.footer__title {
+  margin-bottom: 36px;
+  align-self: start;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 130%;
+
+  background: linear-gradient(90deg, #d8d8d8 -23.48%, #bbb 113.1%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.footer__items {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.footer__items-row {
+  display: flex;
+  gap: 40px;
+}
+.footer__item {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.footer__item-title {
+  color: #999;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+.footer__subtitle {
+  color: #fff;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.footer__footer {
+  width: 100%;
+  background: #010101;
+  padding: 21px;
+  color: #818181;
+  font-size: 12.031px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 18.9px;
+}
+
+@media (max-width: 940px) {
+  .footer__items {
+    flex-direction: row;
+    gap: 60px;
+  }
+  .footer__items-row {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer__items {
+    flex-direction: column;
+    gap: 24px;
+  }
+  .footer__items-row {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+  .footer {
+    padding-top: 60px;
+  }
+  .footer__inner {
+    padding: 0 10px;
+    padding-bottom: 40px;
+  }
+  .footer__row-text {
+    color: #d4d4d4;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+  }
+  .footer__title {
+    font-size: 19px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 130%;
+  }
+}

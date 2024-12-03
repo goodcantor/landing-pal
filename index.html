@@ -1,0 +1,1097 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css"
+    />
+    <link rel="stylesheet" href="/css/normalize.css" />
+    <link rel="stylesheet" href="/css/font.css" />
+    <link rel="stylesheet" href="/css/general.css" />
+    <link rel="stylesheet" href="/css/header.css" />
+    <link rel="stylesheet" href="/css/main.css" />
+    <link rel="stylesheet" href="/css/serv.css" />
+    <link rel="stylesheet" href="/css/cs.css" />
+    <link rel="stylesheet" href="/css/tell.css" />
+    <link rel="stylesheet" href="/css/tabs.css" />
+    <link rel="stylesheet" href="/css/form.css" />
+    <link rel="stylesheet" href="/css/footer.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <div class="header__inner">
+        <a href="#" class="header__logo-link">
+          <img src="imgs/logo.svg" alt="Logo" class="header__logo-img" />
+        </a>
+        <div class="header__links">
+          <a href="#" class="header__link">Услуги</a>
+          <a href="#" class="header__link">Кейсы</a>
+          <a href="#" class="header__link">Запись на консультацию</a>
+          <a href="#" class="header__link">Процесс</a>
+          <a href="#" class="header__link">Контакты</a>
+        </div>
+        <div class="header__btns">
+          <div class="header__langs">
+            <div class="header__langs-ru">Рус</div>
+            <div class="header__langs-en">Eng</div>
+          </div>
+          <div class="header__btn">
+            Стать клиентом
+            <svg
+              class="header__btn-icon"
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              viewBox="0 0 16 16"
+              fill="none"
+            >
+              <path
+                d="M3.625 11.4938L10.2438 4.875H6.125V3.625H12.375V9.875H11.125V5.75625L4.50625 12.375L3.625 11.4938Z"
+                fill="white"
+              />
+            </svg>
+          </div>
+
+          <div class="header__burger">
+            <svg
+              class="header__burger-icon"
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+            >
+              <path
+                d="M3 12H15M3 6H21M3 18H21"
+                stroke="white"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </div>
+        </div>
+      </div>
+
+      <!-- MENU -->
+      <div class="header__menu">
+        <div class="header__menu-top">
+          <div class="header__menu-logo">
+            <img src="imgs/logo-dark.svg" alt="Palatine Vision" />
+          </div>
+          <button class="header__menu-close">
+            <svg
+              class="header__menu-close-icon"
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+            >
+              <path
+                d="M18 6L6 18M6 6L18 18"
+                stroke="white"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </button>
+        </div>
+        <div class="header__menu-content">
+          <button class="header__menu-button">
+            Стать клиентом
+            <svg
+              class="header__menu-button-icon"
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              viewBox="0 0 16 16"
+              fill="none"
+            >
+              <path
+                d="M3.625 11.4938L10.2438 4.875H6.125V3.625H12.375V9.875H11.125V5.75625L4.50625 12.375L3.625 11.4938Z"
+                fill="white"
+              />
+            </svg>
+          </button>
+          <ul class="header__menu-links">
+            <li><a href="#">Услуги</a></li>
+            <li><a href="#">Кейсы</a></li>
+            <li><a href="#">Запись на консультацию</a></li>
+            <li><a href="#">Процесс</a></li>
+            <li><a href="#">Контакты</a></li>
+          </ul>
+          <div class="header__menu-info">
+            <div class="header__menu-info-box">
+              <span class="header__menu-info-title">Адрес</span>
+              <span class="header__menu-info-subtitle"
+                >г. Москва, Проспект Мира д. 3 стр. 3, м. Сухаревская</span
+              >
+            </div>
+
+            <div class="header__menu-info-box">
+              <span class="header__menu-info-title"
+                >Связаться с проектной командой</span
+              >
+              <a
+                class="header__menu-info-subtitle"
+                target="_blank"
+                href="mailto:business@palatine.ru"
+                >business@palatine.ru</a
+              >
+            </div>
+
+            <div class="header__menu-info-box">
+              <span class="header__menu-info-title">Номер телефона</span>
+              <a
+                class="header__menu-info-subtitle"
+                target="_blank"
+                href="tel:+79207126085"
+                >+7 (920) 712-60-85</a
+              >
+            </div>
+          </div>
+        </div>
+        <footer class="header__menu-footer">
+          <p>2020 &copy; Palatine Vision. Все права защищены</p>
+        </footer>
+      </div>
+
+      <!-- MODAL -->
+
+      <div class="header__overlay header__overlay--hidden"></div>
+      <div class="header__modal header__modal--hidden">
+        <button class="header__modal-close">
+          <svg
+            class="header__modal-close-icon"
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+          >
+            <path
+              d="M18 6L6 18M6 6L18 18"
+              stroke="black"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </button>
+
+        <h2 class="header__modal-title">Оставьте заявку</h2>
+        <p class="header__modal-description">
+          Мы свяжемся с Вами в течение суток, чтобы обсудить детали будущего
+          проекта.
+        </p>
+        <form class="header__modal-form">
+          <div class="header__modal-group">
+            <label for="name" class="header__modal-label">Ваше имя*</label>
+            <input
+              type="text"
+              id="name"
+              class="header__modal-input"
+              placeholder="Введите имя"
+              required
+            />
+          </div>
+          <div class="header__modal-group">
+            <label for="email" class="header__modal-label"
+              >Эл. почта или номер телефона*</label
+            >
+            <input
+              type="text"
+              id="email"
+              class="header__modal-input"
+              placeholder="Укажите эл.почту или номер телефона"
+              required
+            />
+          </div>
+          <div class="header__modal-group">
+            <label for="company" class="header__modal-label">Компания*</label>
+            <input
+              type="text"
+              id="company"
+              class="header__modal-input"
+              placeholder="Введите название компании"
+              required
+            />
+          </div>
+          <div class="header__modal-group">
+            <label for="telegram" class="header__modal-label">Telegram</label>
+            <input
+              type="text"
+              id="telegram"
+              class="header__modal-input"
+              placeholder="Укажите ваш логин"
+            />
+          </div>
+          <p class="header__modal-text-privacy">
+            Этот сайт защищен reCAPTCHA, к нему применяются Политика
+            конфиденциальности и Условия использования Google.
+          </p>
+          <button type="submit" class="header__modal-submit">Отправить</button>
+        </form>
+      </div>
+    </header>
+
+    <section class="main">
+      <div class="container">
+        <div class="main__inner">
+          <h2 class="main__title">Palatine Vision</h2>
+          <p class="main__subtitle">
+            Надежный интегратор <br />
+            во вселенной искусственного интеллекта
+          </p>
+          <div class="main__cards">
+            <div class="main__card">
+              <h4 class="main__card-title">5 лет</h4>
+              <p class="main__card-subtitle">
+                Экономим бизнесу <br />
+                деньги технологиями
+              </p>
+            </div>
+
+            <div class="main__card">
+              <h4 class="main__card-title">> 3 000 000 000  ₽</h4>
+              <p class="main__card-subtitle">
+                Дополнительно заработано с помощью наших решений
+              </p>
+            </div>
+
+            <div class="main__card">
+              <h4 class="main__card-title">50+ проектов</h4>
+              <p class="main__card-subtitle">
+                Уже реализованы <br />
+                и приносят пользу
+              </p>
+            </div>
+          </div>
+          <img src="imgs/main.png" alt="img" class="main__img" />
+        </div>
+      </div>
+    </section>
+
+    <section class="serv">
+      <div class="container">
+        <div class="serv__inner">
+          <div class="serv__row">
+            <span class="serv__row-text">Что мы делаем. Услуги</span>
+            <div class="serv__row-line"></div>
+            <span class="serv__row-text">01</span>
+          </div>
+          <h2 class="serv__title">
+            Предоставляем полный цикл создания решений для бизнеса
+            и&nbsp;промышленности с помощью искусственного интеллекта
+          </h2>
+          <div class="serv__cards">
+            <div class="serv__card serv__card-one">
+              <h3 class="serv__card-title">Разработка ИИ</h3>
+              <p class="serv__card-subtitle">
+                Разрабатываем и внедряем собственные нейронные сети, изучаем
+                научные исследования, воспроизводим передовой опыт
+              </p>
+            </div>
+
+            <div class="serv__card serv__card-two">
+              <h3 class="serv__card-title">ИИ-консалтинг</h3>
+              <p class="serv__card-subtitle">
+                Поможем избежать ошибок и потерь при внедрении ИИ. Пройдем
+                вместе с вами путь от идеи до написания ТЗ и реализации
+              </p>
+            </div>
+            <div class="serv__card serv__card-three">
+              <h3 class="serv__card-title">
+                Внедряем решение в производство или бизнес
+              </h3>
+              <p class="serv__card-subtitle">
+                Разрабатываем и поддерживаем высоконагруженный бекенд с быстрыми
+                веб-интерфейсами, масштабируемой инфраструктурой, тестированием
+                и контролем качества
+              </p>
+            </div>
+
+            <div class="serv__card serv__card-four">
+              <h3 class="serv__card-title">Аутстаффинг</h3>
+              <p class="serv__card-subtitle">
+                Усиливаем вашу команду высококвалифицированными разработчиками,
+                которые полностью погружаются в создание вашего проекта
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cs">
+      <div class="container">
+        <div class="cs__inner">
+          <div class="cs__row">
+            <span class="cs__row-text">Кейсы. Кому и как мы уже помогли </span>
+            <div class="cs__row-line"></div>
+            <span class="cs__row-text">02</span>
+          </div>
+
+          <h2 class="cs__title">
+            Cтроим сложные системы, которые справляются с большими данными и
+            высокими нагрузками
+          </h2>
+
+          <div class="cs__slider-row">
+            <div class="cs__slider-wrap">
+              <div class="slider__prev-btn" id="prev1">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                >
+                  <path
+                    d="M15 18L9 12L15 6"
+                    stroke="#151515"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+              <div class="slider__next-btn" id="next1">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                >
+                  <path
+                    d="M9 18L15 12L9 6"
+                    stroke="#151515"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+              <div class="cs__slider" id="slider1">
+                <img src="imgs/slider/slider1-1.png" alt="Slide 1" />
+
+                <img src="imgs/slider/slider1-2.png" alt="Slide 2" />
+
+                <img src="imgs/slider/slider1-3.png" alt="Slide 3" />
+
+                <img src="imgs/slider/slider1-4.png" alt="Slide 4" />
+
+                <img src="imgs/slider/slider1-5.png" alt="Slide 5" />
+              </div>
+            </div>
+
+            <div class="cs__slider-text">
+              <div class="cs__slider-title-row">
+                <div class="cs__slider-title">
+                  Дефектоскопия гипсокартонных листов
+                </div>
+                <img src="imgs/nda.png" alt="" class="cs__slider-img" />
+              </div>
+              <p class="cs__slider-subtitle">
+                Разработали программно-аппаратный комплекс, который сканирует
+                продукцию на конвейере и анализирует ее на дефекты с помощью ИИ.
+                Далее автоматически отбраковывает некачественные изделия и
+                выводит информацию с отчетами для операторов, технологов и
+                маркетологов.
+              </p>
+              <div class="cs__slider-box">
+                <div class="cs__slider-box-item">
+                  <h4 class="cs__slider-box-item-title">Цель:</h4>
+                  <p class="cs__slider-box-item-subtitle">
+                    Снизить количество выпускаемой продукции с браком на
+                    производстве, дать технологам и маркетологам инструмент
+                    измерения количества брака для тестирования гипотез и
+                    эспериментов, а также повысить доверение к бренду
+                  </p>
+                </div>
+                <div class="cs__slider-box-item">
+                  <h4 class="cs__slider-box-item-title">Задача:</h4>
+                  <p class="cs__slider-box-item-subtitle">
+                    Разработать с нуля систему обнаружения дефектов на конвейере
+                    гипсокартона, выводить информацию в операторской и
+                    отправлять сигналы на АСУТП для автоматической отбраковки
+                  </p>
+                </div>
+                <div class="cs__slider-box-item">
+                  <h4 class="cs__slider-box-item-title">Результат:</h4>
+                  <p class="cs__slider-box-item-subtitle">
+                    Успешное внедрение и эксплуатация на протяжении 2+ лет
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="cs__slider-row cs__row-reverse">
+            <div class="cs__slider-wrap">
+              <div class="slider__prev-btn" id="prev2">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                >
+                  <path
+                    d="M15 18L9 12L15 6"
+                    stroke="#151515"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+              <div class="slider__next-btn" id="next2">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                >
+                  <path
+                    d="M9 18L15 12L9 6"
+                    stroke="#151515"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+              <div class="cs__slider" id="slider2">
+                <img src="imgs/slider/slider2-1.png" alt="Slide 1" />
+
+                <img src="imgs/slider/slider2-2.png" alt="Slide 2" />
+
+                <img src="imgs/slider/slider2-3.png" alt="Slide 3" />
+              </div>
+            </div>
+
+            <div class="cs__slider-text">
+              <div class="cs__slider-title-row">
+                <div class="cs__slider-title">
+                  Видеоаналитика дорожного трафика для ЦОДД Новосибирска
+                </div>
+                <img src="imgs/codd.png" alt="" class="cs__slider-img" />
+              </div>
+              <p class="cs__slider-subtitle">
+                Разработали серверное приложение с ИИ моделями для одноплатных
+                компьютеров, которое регистрирует проезд запрещенного транспорта
+                на речных мостах и попытку скрыться от систем видеофиксации в г.
+                Новосибирске.
+              </p>
+              <div class="cs__slider-box">
+                <div class="cs__slider-box-item">
+                  <h4 class="cs__slider-box-item-title">Цель:</h4>
+                  <p class="cs__slider-box-item-subtitle">
+                    Снизить угрозу террористических опасностей и нагрузку на
+                    дорожное полотно мостов, а также реализовать регистрацию
+                    нарушений ПДД
+                  </p>
+                </div>
+                <div class="cs__slider-box-item">
+                  <h4 class="cs__slider-box-item-title">Задача:</h4>
+                  <p class="cs__slider-box-item-subtitle">
+                    Разработать ИИ для обнаружения автомобиля, распознавания его
+                    марки и модели, цвета, гос. номеров и ряда других параметров
+                  </p>
+                </div>
+                <div class="cs__slider-box-item">
+                  <h4 class="cs__slider-box-item-title">Результат:</h4>
+                  <p class="cs__slider-box-item-subtitle">
+                    Успешное внедрение и эксплуатация, снижение проезда
+                    запрещенного типа транспорта на 83%, снижение фактов
+                    перевешивания номеров и других нарушений ПДД на 96%
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="cs__slider-row">
+            <div class="cs__slider-wrap">
+              <div class="slider__prev-btn" id="prev3">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                >
+                  <path
+                    d="M15 18L9 12L15 6"
+                    stroke="#151515"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+              <div class="slider__next-btn" id="next3">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                >
+                  <path
+                    d="M9 18L15 12L9 6"
+                    stroke="#151515"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+              <div class="cs__slider" id="slider3">
+                <img src="imgs/slider/slider3-1.png" alt="Slide 1" />
+
+                <img src="imgs/slider/slider3-2.png" alt="Slide 2" />
+
+                <img src="imgs/slider/slider3-3.png" alt="Slide 3" />
+
+                <img src="imgs/slider/slider3-4.png" alt="Slide 4" />
+              </div>
+            </div>
+
+            <div class="cs__slider-text">
+              <div class="cs__slider-title-row">
+                <div class="cs__slider-title">Медиакласс ИИ</div>
+                <img src="imgs/mediaclass.png" alt="" class="cs__slider-img" />
+              </div>
+              <p class="cs__slider-subtitle">
+                Разработали десктоп приложение с искусственным интеллектом,
+                которое помогает школьникам осваивать медиапрофессии в школах
+                СНГ.
+              </p>
+              <div class="cs__slider-box">
+                <div class="cs__slider-box-item">
+                  <h4 class="cs__slider-box-item-title">Цель:</h4>
+                  <p class="cs__slider-box-item-subtitle">
+                    Помочь школьникам изучать медиапрофессии с помощью
+                    использования новых технологий
+                  </p>
+                </div>
+                <div class="cs__slider-box-item">
+                  <h4 class="cs__slider-box-item-title">Задача:</h4>
+                  <p class="cs__slider-box-item-subtitle">
+                    Разработать UI&UX и десктоп приложение, которое позволит
+                    школьникам удобно работать с отснятыми видео и аудио
+                    материалами и использовать ИИ в своей работе:
+                    транскрибировать и диаризовывать отснятый контент, а потом
+                    выполнять монтаж полностью в оффлайн режиме
+                  </p>
+                </div>
+                <div class="cs__slider-box-item">
+                  <h4 class="cs__slider-box-item-title">Результат:</h4>
+                  <p class="cs__slider-box-item-subtitle">
+                    Внедрено в 15+ образовательных учреждений на территории СНГ
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="tell">
+      <div class="container">
+        <div class="tell__inner">
+          <div class="tell__text">
+            Расскажем про возможности ИИ для вашего бизнеса на консультации
+          </div>
+          <div class="tell__link">
+            Получить консультацию
+            <svg
+              class="tell__link-icon"
+              xmlns="http://www.w3.org/2000/svg"
+              width="17"
+              height="17"
+              viewBox="0 0 17 17"
+              fill="none"
+            >
+              <path
+                d="M3.54199 12.4599L11.0432 4.95866H6.37533V3.54199H13.4587V10.6253H12.042V5.95741L4.54074 13.4587L3.54199 12.4599Z"
+                fill="white"
+              />
+            </svg>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="tabs">
+      <div class="container">
+        <div class="tabs__inner">
+          <div class="tabs__row">
+            <span class="tabs__row-text">Как мы работаем, Процесс</span>
+            <div class="tabs__row-line"></div>
+            <span class="tabs__row-text">03</span>
+          </div>
+
+          <div class="tabs__content">
+            <div class="tabs__left">
+              <h3 class="tabs__left-title">
+                Выстраиваем <br class="tabs__br" />
+                прозрачный процесс работы
+              </h3>
+              <p class="tabs__left-subtitle">
+                Сроки этапов предварительные. При работе с вашим проектом будут
+                определены точные даты завершения каждого этапа
+              </p>
+            </div>
+            <div class="tabs__right">
+              <div class="tabs__right-tab">
+                <div class="tabs__right-tab-header" data-tab="1">
+                  <div class="tabs__right-tab-header-text">
+                    <span class="tabs__right-tab-header-toptitle"
+                      ><b>Этап 1:</b> 1-8 недель</span
+                    >
+                    <span class="tabs__right-tab-header-title"
+                      >Предпроектное исследование</span
+                    >
+                  </div>
+
+                  <svg
+                    class="tabs__right-tab-header-icon"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                  >
+                    <path
+                      d="M16.58 8.58984L12 13.1698L7.41 8.58984L6 9.99984L12 15.9998L18 9.99984L16.58 8.58984Z"
+                      fill="#151515"
+                    />
+                  </svg>
+                </div>
+                <div class="tabs__right-tab-content" id="tab-1">
+                  <ul class="tabs__right-tab-content-ul">
+                    <li class="tabs__right-tab-content-li">
+                      обсуждаем ваши проблемы и задачи;
+                    </li>
+                    <li class="tabs__right-tab-content-li">
+                      изучаем бизнес-процессы и собираем информацию;
+                    </li>
+                    <li class="tabs__right-tab-content-li">
+                      формируем видение будущего решения;
+                    </li>
+                    <li class="tabs__right-tab-content-li">
+                      определяем целевые показатели и уточняем или формируем
+                      техническое задание.
+                    </li>
+                  </ul>
+                  Результат: детально проработанные требования и план решения
+                  задач.
+                </div>
+              </div>
+
+              <div class="tabs__right-tab">
+                <div class="tabs__right-tab-header" data-tab="2">
+                  <div class="tabs__right-tab-header-text">
+                    <span class="tabs__right-tab-header-toptitle"
+                      ><b>Этап 2:</b> 2-8 недель</span
+                    >
+                    <span class="tabs__right-tab-header-title"
+                      >Проведение пилота</span
+                    >
+                  </div>
+
+                  <svg
+                    class="tabs__right-tab-header-icon"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                  >
+                    <path
+                      d="M16.58 8.58984L12 13.1698L7.41 8.58984L6 9.99984L12 15.9998L18 9.99984L16.58 8.58984Z"
+                      fill="#151515"
+                    />
+                  </svg>
+                </div>
+                <div class="tabs__right-tab-content" id="tab-2">
+                  <ul class="tabs__right-tab-content-ul">
+                    <li class="tabs__right-tab-content-li">
+                      анализируем внутренние и внешние данные;
+                    </li>
+                    <li class="tabs__right-tab-content-li">
+                      строим и проверяем гипотезы;
+                    </li>
+                    <li class="tabs__right-tab-content-li">
+                      разрабатываем первую версию продукта;
+                    </li>
+                    <li class="tabs__right-tab-content-li">
+                      тестируем и анализируем итоги пилота.
+                    </li>
+                  </ul>
+                  Результат: пилот продукта и выводы после тестирования.
+                </div>
+              </div>
+
+              <div class="tabs__right-tab">
+                <div class="tabs__right-tab-header" data-tab="3">
+                  <div class="tabs__right-tab-header-text">
+                    <span class="tabs__right-tab-header-toptitle"
+                      ><b>Этап 3:</b> 1-6 месяцев</span
+                    >
+                    <span class="tabs__right-tab-header-title"
+                      >Запуск продукта</span
+                    >
+                  </div>
+
+                  <svg
+                    class="tabs__right-tab-header-icon"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                  >
+                    <path
+                      d="M16.58 8.58984L12 13.1698L7.41 8.58984L6 9.99984L12 15.9998L18 9.99984L16.58 8.58984Z"
+                      fill="#151515"
+                    />
+                  </svg>
+                </div>
+                <div class="tabs__right-tab-content" id="tab-3">
+                  <ul class="tabs__right-tab-content-ul">
+                    <li class="tabs__right-tab-content-li">
+                      собираем и уточняем все требования для решения;
+                    </li>
+                    <li class="tabs__right-tab-content-li">
+                      разрабатываем инженерные комплексы, “боевые”
+                    </li>
+                    <li class="tabs__right-tab-content-li">
+                      версии нейронных сетей и ядро системы;
+                    </li>
+                    <li class="tabs__right-tab-content-li">
+                      внедряем решение в продуктовую среду.
+                    </li>
+                  </ul>
+                  Результат: готовый и внедренный в среду продукт.
+                </div>
+              </div>
+
+              <div class="tabs__right-tab">
+                <div class="tabs__right-tab-header" data-tab="4">
+                  <div class="tabs__right-tab-header-text">
+                    <span class="tabs__right-tab-header-toptitle"
+                      ><b>Этап 4:</b> 1-4 недели</span
+                    >
+                    <span class="tabs__right-tab-header-title"
+                      >Масштабирование продукта</span
+                    >
+                  </div>
+
+                  <svg
+                    class="tabs__right-tab-header-icon"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                  >
+                    <path
+                      d="M16.58 8.58984L12 13.1698L7.41 8.58984L6 9.99984L12 15.9998L18 9.99984L16.58 8.58984Z"
+                      fill="#151515"
+                    />
+                  </svg>
+                </div>
+                <div class="tabs__right-tab-content" id="tab-4">
+                  <ul class="tabs__right-tab-content-ul">
+                    <li class="tabs__right-tab-content-li">
+                      анализируем результаты проекта;
+                    </li>
+                    <li class="tabs__right-tab-content-li">
+                      контролируем и поддерживаем работу решения;
+                    </li>
+                    <li class="tabs__right-tab-content-li">
+                      при необходимости развиваем решение дальше;
+                    </li>
+                    <li class="tabs__right-tab-content-li">
+                      тиражируем решение в другие отделы или производственные
+                      участки.
+                    </li>
+                  </ul>
+                  Результат: масштабирование, поддержка и развитие продукта.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="form">
+      <div class="container">
+        <div class="form__inner">
+          <div class="form__row">
+            <span class="form__row-text">Как мы работаем, Процесс</span>
+            <div class="form__row-line"></div>
+            <span class="form__row-text">04</span>
+          </div>
+
+          <h2 class="form__title">Разработаем решение для вас</h2>
+
+          <form class="form__body">
+            <div class="form__top">
+              <h3 class="form__top-title">01. Укажите контактные данные</h3>
+              <p class="form__top-subtitle">
+                Свяжемся с вами в ближайшее время для обсуждения деталей проекта
+              </p>
+
+              <div class="form__inputs">
+                <div class="form__input-label">
+                  <label class="form__label" for="name">Ваше имя*</label>
+                  <input
+                    class="form__input"
+                    type="text"
+                    id="name"
+                    name="name"
+                    placeholder="Введите имя"
+                  />
+                </div>
+
+                <div class="form__input-label">
+                  <label class="form__label" for="email"
+                    >Эл. почта или номер телефона*</label
+                  >
+                  <input
+                    class="form__input"
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="Укажите эл.почту или номер телефона"
+                  />
+                </div>
+
+                <div class="form__input-label">
+                  <label class="form__label" for="company">Компания*</label>
+                  <input
+                    class="form__input"
+                    type="text"
+                    id="company"
+                    name="company"
+                    placeholder="Введите название компании"
+                  />
+                </div>
+
+                <div class="form__input-label">
+                  <label class="form__label" for="telegram">Telegram</label>
+                  <input
+                    class="form__input"
+                    type="text"
+                    id="telegram"
+                    name="telegram"
+                    placeholder="Введите название компании"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div class="form__second">
+              <div class="form__second-title">
+                02. Опишите задачу
+                <span class="form__required">Необязательно</span>
+              </div>
+              <p class="form__description">
+                В Palatine мы ежедневно получаем множество запросов, и подробно
+                заполненная форма поможет сделать нашу первую встречу
+                максимально продуктивной. Чем более детальными будут ваши
+                ответы, тем лучше мы сможем понять ваши задачи и предложить
+                наиболее оптимальное решение. Если торопитесь — оставьте поле
+                пустым, всё обсудим на встрече
+              </p>
+
+              <div class="form__second-btm">
+                <div class="form__second-btm-box">
+                  <h4 class="form__second-btm-box-maintitle">
+                    Как описать задачу:
+                  </h4>
+
+                  <div class="form__second-step">
+                    <h5 class="form__second-btm-box-title">1. Задача</h5>
+                    <div class="form__second-btm-box-subtitle">
+                      Что именно нужно сделать? <br />
+                      Какие разработчики (и сколько) вам нужны? <br />
+                      С каким стеком предстоит работать?
+                    </div>
+                  </div>
+
+                  <div class="form__second-step">
+                    <h5 class="form__second-btm-box-title">2. Контекст</h5>
+                    <div class="form__second-btm-box-subtitle">
+                      Расскажите о текущей ситуации. <br />
+                      На какой стадии проект? Какая команда в нем уже
+                      задействована? С какими проблемами уже столкнулись?
+                    </div>
+                  </div>
+
+                  <div class="form__second-step">
+                    <h5 class="form__second-btm-box-title">3. Ограничения</h5>
+                    <div class="form__second-btm-box-subtitle">
+                      Расскажите о текущей ситуации. На какой стадии проект?
+                      Какая команда в нем уже задействована? С какими проблемами
+                      уже столкнулись?
+                    </div>
+                  </div>
+
+                  <div class="form__second-step">
+                    <h5 class="form__second-btm-box-title">
+                      4. Расскажите о себе
+                    </h5>
+                    <div class="form__second-btm-box-subtitle">
+                      Расскажите о своей компании и команде, которая будет
+                      задействована на проекте с вашей стороны.
+                    </div>
+                  </div>
+                </div>
+
+                <div class="form__area-submit">
+                  <textarea
+                    class="form__textarea"
+                    name="description"
+                    placeholder="Описание проекта или пояснение"
+                  ></textarea>
+                  <div class="form__area-text-btn">
+                    <div class="form__area-text">
+                      Этот сайт защищен reCAPTCHA, к нему применяются Политика
+                      конфиденциальности и Условия использования Google.
+                    </div>
+                    <button class="form__submit" type="submit">
+                      Отправить
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__inner">
+          <div class="footer__row">
+            <span class="footer__row-text">Контакты</span>
+            <div class="footer__row-line"></div>
+            <span class="footer__row-text">05</span>
+          </div>
+          <h3 class="footer__title">Ответим на все оставшиеся вопросы</h3>
+          <div class="footer__items">
+            <div class="footer__items-row">
+              <div class="footer__item">
+                <h4 class="footer__item-title">Для общих запросов</h4>
+                <p class="footer__subtitle">info@palatine.ru</p>
+              </div>
+              <div class="footer__item">
+                <h4 class="footer__item-title">Связаться с проектной командой</h4>
+                <p class="footer__subtitle">business@palatine.ru</p>
+              </div>
+              <div class="footer__item">
+                <h4 class="footer__item-title">Связаться с проектной командой</h4>
+                <p class="footer__subtitle">business@palatine.ru</p>
+              </div>
+            </div>
+            <div class="footer__items-row">
+              <div class="footer__item">
+                <h4 class="footer__item-title">Номер телефона</h4>
+                <p class="footer__subtitle">+7 (920) 712-60-85</p>
+              </div>
+              <div class="footer__item">
+                <h4 class="footer__item-title">Номер телефона</h4>
+                <p class="footer__subtitle">+7 (920) 712-60-85</p>
+              </div>
+              <div class="footer__item">
+                <h4 class="footer__item-title">Адрес</h4>
+                <p class="footer__subtitle">
+                  г. Москва, Проспект Мира д. 3 стр. 3, м. Сухаревская
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer__footer">
+        2020 - ∞ © Palatine Vision. Все права защищены
+      </div>
+    </footer>
+
+    <script src="js/modal.js"></script>
+    <script src="js/menu.js"></script>
+    <script src="js/tabs.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/min/tiny-slider.js"></script>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const slider1 = tns({
+          container: "#slider1",
+          prevButton: "#prev1",
+          nextButton: "#next1",
+          items: 1,
+          slideBy: "page",
+          autoplay: false,
+          controls: true,
+          nav: false,
+          arrowKeys: true,
+          swipeAngle: false,
+          speed: 400,
+          mouseDrag: true,
+          autoHeight: true,
+        });
+
+        const slider2 = tns({
+          container: "#slider2",
+          prevButton: "#prev2",
+          nextButton: "#next2",
+          items: 1,
+          slideBy: "page",
+          autoplay: false,
+          controls: true,
+          nav: false,
+          arrowKeys: true,
+          swipeAngle: false,
+          speed: 400,
+          mouseDrag: true,
+          autoHeight: true,
+        });
+
+        const slider3 = tns({
+          container: "#slider3",
+          prevButton: "#prev3",
+          nextButton: "#next3",
+          items: 1,
+          slideBy: "page",
+          autoplay: false,
+          controls: true,
+          nav: false,
+          arrowKeys: true,
+          swipeAngle: false,
+          speed: 400,
+          mouseDrag: true,
+          autoHeight: true,
+        });
+      });
+    </script>
+  </body>
+</html>
